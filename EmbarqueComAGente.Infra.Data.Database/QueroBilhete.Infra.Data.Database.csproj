@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.90" />
+    <PackageReference Include="MySql.Data" Version="8.0.25" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmbarqueComAGente.Domain\QueroBilhete.Domain.csproj" />
+    <ProjectReference Include="..\EmbarqueComAGente.Infra.Data\QueroBilhete.Infra.Data.csproj" />
+    <ProjectReference Include="..\EmbarqueComAGente.Service\QueroBilhete.Service.csproj" />
+  </ItemGroup>
+
+</Project>

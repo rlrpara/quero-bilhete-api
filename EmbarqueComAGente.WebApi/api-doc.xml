@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QueroBilhete.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:QueroBilhete.WebApi.Controllers.LoginController.PostCheckFirebase(QueroBilhete.Service.ViewModels.FirebaseAuthenticate)">
+             <summary>
+             Autenticação no Firebase
+             </summary>
+             /// <remarks>
+             Examplo envio:
+            
+                 POST /api/usuario/authenticatefirebase
+                 {
+                    "nomeUsuario": "",
+                    "email": "jail@gmail.com",
+                    "anonimo": false,
+                    "telefoneCelular": "",
+                    "fotoURL": "",
+                    "uid": "token-aqui"
+                 }
+             </remarks>
+             <param name="entidade">Classe contendo os dados de login</param>
+             <returns>ados de autenticação do usuário na base</returns>
+             <response code="200">Retorna com sucesso na requisição</response>
+             <response code="400">Retorna com erro ao enviar os dados da entidade, dados ausentes</response>
+             <response code="401">Retorna com erro ao enviar token inválido ou expirado</response>
+        </member>
+        <member name="M:QueroBilhete.WebApi.Controllers.LoginController.PostValidarUsuario(System.String)">
+            <summary>
+            Retornar se o usuário existe no banco de dados com base no UID
+            </summary>
+            <param name="uid">Informe aqui o código UID</param>
+            <response code="200">Retorna com sucesso na requisição</response>
+            <response code="400">Retorna quando não informado o UID</response>
+            <response code="404">Retorna como dados não encontrados</response>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
