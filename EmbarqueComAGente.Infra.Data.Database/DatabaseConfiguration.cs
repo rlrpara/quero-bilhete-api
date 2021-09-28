@@ -5,6 +5,7 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Linq;
 using System.Text;
+using AutoMapper.Configuration;
 
 namespace QueroBilhete.Infra.Data.Database
 {
