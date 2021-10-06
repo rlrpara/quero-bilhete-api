@@ -1,11 +1,10 @@
 ﻿using Dapper;
+using MySql.Data.MySqlClient;
 using QueroBilhete.Domain.Entities;
 using QueroBilhete.Infra.Data.Context;
-using MySql.Data.MySqlClient;
 using System;
 using System.Linq;
 using System.Text;
-using AutoMapper.Configuration;
 
 namespace QueroBilhete.Infra.Data.Database
 {

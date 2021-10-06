@@ -15,7 +15,6 @@ namespace QueroBilhete.Infra.Data.Context
         private static bool EhBrancoNulo(string valor) => string.IsNullOrWhiteSpace(valor.ToString().Trim());
         private readonly static string _nomeBanco = Environment.GetEnvironmentVariable("MYSQL_DATABASE");
 
-
         #region Métodos Privados
         private static string ObterNomeTabela<T>() where T : class
         {

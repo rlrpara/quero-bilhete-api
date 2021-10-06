@@ -1,6 +1,6 @@
 ﻿namespace QueroBilhete.Infra.Data.Context
 {
-    internal class ParametrosConexao
+    public class ParametrosConexao
     {
         public ParametrosConexao()
         {
